@@ -28,7 +28,7 @@ html, body {
 
 .hint {
   position: fixed;
-  top: 2vh;
+  top: 1vh;
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
@@ -45,7 +45,7 @@ html, body {
 
 .roll {
   position: fixed;
-  top: 10vh;
+  top: 5vh;
   left: 50%;
   transform: translateX(-50%);
   height: 60vh;
