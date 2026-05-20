@@ -1,0 +1,66 @@
+:root {
+  --bg: #000;
+  --fg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* No double-tap zoom on mobile; no text selection by accidental drag. */
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  overscroll-behavior: none;
+}
+
+.hint {
+  position: fixed;
+  top: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: clamp(31px, 3.78vw, 46px);
+  letter-spacing: 0.06em;
+  pointer-events: none;
+  user-select: none;
+  z-index: 3;
+  white-space: nowrap;
+}
+
+.roll {
+  position: fixed;
+  top: 16vh;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60vh;
+  width: auto;
+  max-width: 92vw;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  z-index: 1;
+}
+
+#scene {
+  position: fixed;
+  z-index: 2;
+  display: block;
+  touch-action: none;
+}
+
